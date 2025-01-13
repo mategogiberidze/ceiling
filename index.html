@@ -13,8 +13,17 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #eceff1, #b0bec5);
+            background: linear-gradient(135deg, #f9fbe7, #ffebee, #e1f5fe, #e8f5e9);
             color: #263238;
+            animation: ceilingColors 10s infinite;
+        }
+
+        @keyframes ceilingColors {
+            0% { background: #f9fbe7; }
+            25% { background: #ffebee; }
+            50% { background: #e1f5fe; }
+            75% { background: #e8f5e9; }
+            100% { background: #f9fbe7; }
         }
 
         .container {
@@ -22,7 +31,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             max-width: 400px;
         }
 
@@ -46,6 +55,27 @@
         .contact a:hover {
             text-decoration: underline;
         }
+
+        .nav {
+            margin-top: 20px;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            color: #37474f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: #0288d1;
+        }
+
+        .icon img {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +85,14 @@
         <div class="contact">
             <p>ნომერი: <a href="tel:574335591">574 33 55 91</a></p>
             <p>ელფოსტა: <a href="mailto:info@ceiling.ge">info@ceiling.ge</a></p>
+        </div>
+        <div class="nav">
+            <a href="https://www.instagram.com/chitaiag/" target="_blank" class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/giorgi.chita1a" target="_blank" class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
         </div>
     </div>
 </body>
