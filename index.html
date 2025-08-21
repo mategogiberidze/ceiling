@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Maintenance | Ceiling by Chito</title>
     <meta name="description" content="Ceiling by Chito is currently under maintenance. Contact us at 574 33 55 91 or info@ceiling.ge" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Poppins", sans-serif;
         margin: 0;
         padding: 0;
         color: #333;
@@ -16,17 +19,29 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 40%),
-                    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 40%),
-                    linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
-        background-attachment: fixed;
+        background: linear-gradient(-45deg, #74ebd5, #acb6e5, #ff9a9e, #fad0c4);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
       .container {
         text-align: center;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.85);
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 40px 30px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
       }
       .logo {
         max-width: 250px;
@@ -34,9 +49,17 @@
         height: auto;
         margin-bottom: 20px;
       }
+      h1 {
+        margin-top: 0;
+      }
+      .info {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
       .contact a {
         color: #0077cc;
         text-decoration: none;
+        font-weight: 500;
       }
       .contact a:hover {
         text-decoration: underline;
@@ -45,6 +68,7 @@
         margin: 0 10px;
         color: #0077cc;
         text-decoration: none;
+        font-weight: 500;
       }
       .social a:hover {
         text-decoration: underline;
@@ -54,13 +78,16 @@
   <body>
     <div class="container">
       <img src="/images/ceiling.png" alt="Ceiling by Chito Logo" class="logo" />
-      <h1>We'll be back soon</h1>
+      <h1>საიტი დროებით მიუწვდომელია</h1>
+      <div class="info">
+        <p>ვაკეთებთ ფრანგულ გასაჭიმ ჭერებს, ვამონტაჟებთ სანათებს და ვკიდებთ ჭაღებს.</p>
+        <p>სტანდარტული ბინის მონტაჟის დრო: 2-3 დღე.</p>
+        <p>სამუშაო გამოცდილება: 10 წელზე მეტი.</p>
+        <p>შესაძლებელია სამუშაოს გრაფიკის მოქნილი ადაპტაცია.</p>
+      </div>
       <p>
-        Our site is currently undergoing scheduled maintenance.<br />
-        For assistance, please call
-        <span class="contact"><a href="tel:574335591">574 33 55 91</a></span>
-        or email
-        <span class="contact"><a href="mailto:info@ceiling.ge">info@ceiling.ge</a></span>.
+        დაგვიკავშირდით: <span class="contact"><a href="tel:574335591">574 33 55 91</a></span>
+        ან წერილი გამოგვიგზავნეთ: <span class="contact"><a href="mailto:info@ceiling.ge">info@ceiling.ge</a></span>
       </p>
       <div class="social">
         <a href="https://www.facebook.com/ceilingbychito" target="_blank">Facebook</a>
